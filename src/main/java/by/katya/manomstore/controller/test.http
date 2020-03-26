@@ -1,0 +1,32 @@
+GET localhost:8080/manometer/test
+
+###
+
+POST localhost:8080/manometer
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "MT",
+  "manometerType": "PressureGauge",
+  "specification": "Test",
+  "price": 10
+}
+
+###
+
+GET localhost:8080/manometer/1
+
+###
+
+DELETE localhost:8080/manometer/1
+
+###
+
+POST localhost:8080/manometer/1
+
+Content-Type: application/x-www-form-urlencoded
+
+price=15
+
+###
