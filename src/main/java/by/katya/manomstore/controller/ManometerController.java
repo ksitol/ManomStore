@@ -53,7 +53,7 @@ public class ManometerController {
         return new ResponseEntity<>(manometer, HttpStatus.OK);
     }
 
-    @PostMapping (path ="/{id}")
+    @PostMapping (path = "/{id}")
     public ResponseEntity<Manometer> editManometer (@PathVariable int id, String specification) throws ManomEx {
         Manometer manometer = manometerService.searchManometer(id);
         if (manometer == null) {
@@ -62,6 +62,5 @@ public class ManometerController {
         manometerService.editManometer(manometer, specification);
         return new ResponseEntity<>(manometer, HttpStatus.OK);
     }
-
 
 }

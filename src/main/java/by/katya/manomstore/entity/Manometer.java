@@ -11,6 +11,7 @@ import java.util.Objects;
 
 @Entity
 @Data
+@Table (name  = "manometers")
 @AllArgsConstructor
 @NoArgsConstructor
 public class Manometer implements Serializable {
