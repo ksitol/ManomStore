@@ -39,8 +39,8 @@ public class ManometerService {
         return null;
     }
 
-    public Manometer editManometer (Manometer manometer, int price) {
-        manometer.setPrice(price);
+    public Manometer editManometer (Manometer manometer, String specification) {
+        manometer.setSpecification(specification);
         return manometer;
     }
 

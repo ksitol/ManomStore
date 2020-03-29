@@ -27,6 +27,6 @@ POST localhost:8080/manometer/1
 
 Content-Type: application/x-www-form-urlencoded
 
-price=15
+specification=smth
 
 ###
