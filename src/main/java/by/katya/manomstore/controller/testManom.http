@@ -23,10 +23,7 @@ DELETE localhost:8080/manometer/1
 
 ###
 
-POST localhost:8080/manometer/1
-
-Content-Type: application/x-www-form-urlencoded
-
-specification=smth
+POST localhost:8080/manometer/1?specification=smth
+Content-Type: application/json
 
 ###
